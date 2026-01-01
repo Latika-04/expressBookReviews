@@ -1,0 +1,81 @@
+//subquestion 1
+C:\Users\mvsai\OneDrive\Documents\git\expressBookReviews> curl.exe http://localhost:5000/author-async/Chinua%20Achebe
+[
+    {
+        "isbn": "1",
+        "title": "Things Fall Apart",
+        "reviews": {}
+    }
+]
+//subquestion 2
+C:\Users\mvsai\OneDrive\Documents\git\expressBookReviews> curl.exe http://localhost:5000/title-async/Things%20Fall%20Apart
+[
+    {
+        "isbn": "1",
+        "author": "Chinua Achebe",
+        "reviews": {}
+    }
+]
+//sub question 3
+C:\Users\mvsai\OneDrive\Documents\git\expressBookReviews> curl.exe http://localhost:5000/isbn-async/1
+{
+    "author": "Chinua Achebe",
+    "title": "Things Fall Apart",
+    "reviews": {}
+}
+//Sub question 4
+C:\Users\mvsai\OneDrive\Documents\git\expressBookReviews> curl.exe http://localhost:5000/async
+{
+    "1": {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {}
+    },
+    "2": {
+        "author": "Hans Christian Andersen",
+        "title": "Fairy tales",
+        "reviews": {}
+    },
+    "3": {
+        "author": "Dante Alighieri",
+        "title": "The Divine Comedy",
+        "reviews": {}
+    },
+    "4": {
+        "author": "Unknown",
+        "title": "The Epic Of Gilgamesh",
+        "reviews": {}
+    },
+    "5": {
+        "author": "Unknown",
+        "title": "The Book Of Job",
+        "reviews": {}
+    },
+    "6": {
+        "author": "Unknown",
+        "title": "One Thousand and One Nights",
+        "reviews": {}
+    },
+    "7": {
+        "author": "Unknown",
+        "title": "Njál's Saga",
+        "reviews": {}
+    },
+    "8": {
+        "author": "Jane Austen",
+        "title": "Pride and Prejudice",
+        "reviews": {}
+    },
+    "9": {
+        "author": "Honoré de Balzac",
+        "title": "Le Père Goriot",
+        "reviews": {}
+    },
+    "10": {
+        "author": "Samuel Beckett",
+        "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+        "reviews": {}
+    }
+}
+
+
